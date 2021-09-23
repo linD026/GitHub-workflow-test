@@ -10,6 +10,14 @@ on:
 
 
 jobs:
+  cannot_do_this:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: don't do this
+        uses: actions/checkout@v2
+      - name: print
+        run: echo "hello"
+        shell: bash
 
   validate:
     runs-on: ubuntu-20.04
